@@ -1,0 +1,15 @@
+Game function:
+1. print_GUI
+2. restart_game
+3. save_status
+4. undo_move
+5. flip_deck
+6. find_card
+7. move_to_stack
+8. move_to_columns
+9. play_game
+
+GUI function:
+10. initCard
+11. generateGUI
+12. splash

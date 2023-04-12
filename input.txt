@@ -1,0 +1,39 @@
+Valid card input:
+D,C,H,S for Diamond, Club, Heart, Spade
+A2345678910JQK
+
+Valid user action:
+1. EXIT (quit game)
+2. RESTART (restart game)
+3. FLIP / F (flip the deck)
+4. (just enter card name), e.g 7H (Priority: 1. move to stack, 2. move to columns)
+5. 7H C (specify only to columns)
+6. 7H S (specify only to stack)
+7. UNDO / RE (undo last move)
+
+MOVES: +1 for any valid move
+SCORE: 
++5 for card move from deck to column
++5 for card in column opened
++10 for card move to stack
+-15 for card from stack to column
+-100 for deck cycled for 1 time
+always >= 0
+
+Need to run in Light theme for best experience
+
+Example:
+
+7H (not case sensitive, 7h / just type 7h are ok)
+    it means moving 7♥ 
+    1. To stack (if available)
+    2. To available column (if any, prioritize to column 1 and so on)
+
+RESTART (not case sensitive)
+    start a new game
+
+FLIP (f/F are ok)
+    This action would open one card from deck, the bottom card would be closed if opened card >3
+EXIT
+    Quit game
+            
